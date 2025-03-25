@@ -62,6 +62,9 @@ fig1w = px.line(df_avg_overall_w,
     # Update the trace to display the text on the chart
 fig1w.update_traces(textposition="top center")
 
+# Set up input widgets
+st.logo(image="Iqorlogo.png", 
+        icon_image="iQor-corporate.png")    
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
