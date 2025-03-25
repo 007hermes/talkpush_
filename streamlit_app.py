@@ -61,12 +61,11 @@ fig1w = px.line(df_avg_overall_w,
             line_shape="linear",text="TEXT_LABEL")
     # Update the trace to display the text on the chart
 fig1w.update_traces(textposition="top center")
-# Sidebar
-with st.sidebar:
-    st.header("⚙️ Settings")
-    #start_date = st.date_input("Start date", df['DATE'].min())
-    #end_date = st.date_input("End date", df['DATE'].max())
-    #time_frame = st.selectbox("Select time frame", ("Daily", "Cumulative"))
+
+
+# Sidebar navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Overview", "Talkscore Analysis", "Other Metrics"])
 
 # Set up the dashboard
 st.title("Streamlit Talkpush Dashboard")
