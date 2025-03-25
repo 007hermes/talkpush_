@@ -64,9 +64,10 @@ fig1w.update_traces(textposition="top center")
 # Sidebar
 with st.sidebar:
     st.header("⚙️ Settings")
-    start_date = st.date_input("Start date", df['DATE'].min())
-    end_date = st.date_input("End date", df['DATE'].max())
-    time_frame = st.selectbox("Select time frame", ("Daily", "Cumulative"))
+    #start_date = st.date_input("Start date", df['DATE'].min())
+    #end_date = st.date_input("End date", df['DATE'].max())
+    #time_frame = st.selectbox("Select time frame", ("Daily", "Cumulative"))
+
 # Set up the dashboard
 st.title("Streamlit Talkpush Dashboard")
 # Input widgets
